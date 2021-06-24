@@ -1,1 +1,1 @@
-Calculator developed in Java and Kotlin for Android for the Mobile Device Development course.
+Atividade avaliativa da matéria PDM 2021/1
