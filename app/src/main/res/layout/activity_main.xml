@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/displayTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_margin="20dp"
+        android:textSize="30sp"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/clearBt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:text="@string/ce" />
+
+        <Button
+            android:id="@+id/clearAllBt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:text="@string/clearAll" />
+
+        <Button
+            android:id="@+id/backspaceBt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:fontFamily="@font/arial_unicode"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="@string/backspace" />
+
+        <Button
+            android:id="@+id/divisionBt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:text="@string/division" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sevenBt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:text="@string/seven" />
+        <Button
+            android:id="@+id/eightBt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:text="@string/eight" />
+        <Button
+            android:id="@+id/nineBt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:text="@string/nine" />
+
+        <Button
+            android:id="@+id/multiplicationBt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:text="@string/multiplication" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fourBt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:text="@string/four" />
+        <Button
+            android:id="@+id/fiveBt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:text="@string/five" />
+        <Button
+            android:id="@+id/sixBt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:text="@string/six" />
+
+        <Button
+            android:id="@+id/minusBt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:text="@string/minus" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/oneBt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:text="@string/one" />
+        <Button
+            android:id="@+id/twoBt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:text="@string/two" />
+        <Button
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:text="@string/three" />
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:text="@string/sum" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/plusMinusBt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:text="@string/plus_minus" />
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:text="@string/zero" />
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:text="@string/decimal" />
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:text="@string/equal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/squareRootBt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:text="√" />
+        <Button
+            android:id="@+id/exponentialBt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:text="^" />
+
+    </LinearLayout>
+
+</LinearLayout>
